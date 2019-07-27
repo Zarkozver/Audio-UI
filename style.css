@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: slategray;
+}
+.wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    background-color: rgba(0,0,0,0.7);
+}
+.audio-wrap{
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.audio-length{
+    width: 600px;
+    height: 5px;
+    background-color: darkgrey;
+    border-radius: 2px;
+    margin: 0 10px 0 10px;
+}
+.audio-sen{
+    width: 0%;
+    height: 5px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.control-wrap{
+    margin-bottom: 15px;
+    display: flex;
+    width: 100px;
+    justify-content: space-around;
+}
+.back{
+    color: rgba(255,255,255,0.8);
+    font-size: 18px;
+
+}
+.back:hover{
+    color: rgba(255,255,255);
+}
+.audio-sen-wrap{
+    display: flex;
+    align-items: center;
+}
+.start,.end{
+    font-size: 15px;
+    color: aliceblue;
+}
+.fa-circle{
+    font-size: 0px;
+    transition: all ease 0.2s;
+}
+.audio-length:hover .fa-circle{
+    font-size: 13px;
+}
+.audio-length:hover .audio-sen{
+    background-color: limegreen;
+}
+.wrap-neki{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.volume-length{
+    width: 80px;
+    height: 4px;
+    margin-left: 10px;
+    border-radius: 2px;
+    background-color: rgba(155,155,155,0.6);
+}
+.volume-length-sen{
+    width: 20%;
+    height: 5px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.volume-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.volume-length:hover .fa-circle{
+    font-size: 11px;
+}
+.volume-length:hover .volume-length-sen{
+    background-color: limegreen;
+}
+.neki{
+    width: 200px;
+}
+.cover{
+    width: 100%;
+    position: inherit;
+}
+.title{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: Calibri;
+}
+.wrap-cover{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 300px;
+    max-width: 450px; 
+    min-width: 150px;
+    resize: horizontal;
+    overflow: auto;
+    height: 100%;
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+.end,.start{
+    font-family:serif;
+    font-size: 13px;
+}
+.fa-plus,.fa-minus{
+    margin-left: 10px;
+}
+.fa-step-backward,.fa-step-forward{
+    margin: 0 20px 0 20px;
+}
